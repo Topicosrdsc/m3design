@@ -1,6 +1,34 @@
+<!DOCTYPE html>
+<html lang=&quot;en&quot; >
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Material Design 3</title>
+<head>
+  <meta charset=&quot;UTF-8&quot;>
+  
+
+    <link rel=&quot;apple-touch-icon&quot; type=&quot;image/png&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png&quot; />
+
+    <meta name=&quot;apple-mobile-web-app-title&quot; content=&quot;CodePen&quot;>
+
+    <link rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico&quot; />
+
+    <link rel=&quot;mask-icon&quot; type=&quot;image/x-icon&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg&quot; color=&quot;#111&quot; />
+
+
+
+  
+    <script src=&quot;https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js&quot;></script>
+
+
+  <title>CodePen - Material Design 3 Switch</title>
+
+    <link rel=&quot;canonical&quot; href=&quot;https://codepen.io/Kamiya4047/pen/WNzeZov&quot;>
+  <link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;>
+<link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin>
+<link href=&quot;https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap&quot; rel=&quot;stylesheet&quot;>
+<link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&quot; />
+  
+  
+  
 <style>
 /* 
  * Material Design 3 Switch by Kamiya
@@ -65,7 +93,7 @@ body {
     width: 50px;
     -webkit-tap-highlight-color: transparent;
     margin: 10px;
-    font-family: "Roboto", sans-serif;
+    font-family: &quot;Roboto&quot;, sans-serif;
 }
 
 .md3.switch input {
@@ -92,7 +120,7 @@ body {
 /* thumb */
 .md3.switch span.slider::before {
     position: absolute;
-    content: "";
+    content: &quot;&quot;;
     height: 16px;
     width: 16px;
     left: 0px;
@@ -205,49 +233,64 @@ body {
   'opsz' 48
 }
 </style>
-<script>
-document
-  .querySelector("#darkmode")
-  .onclick = function() {
-    if (this.checked)
-      document.body.classList.add("dark");
-    else
-      document.body.classList.remove("dark");
-  }
+
+  <script>
+  window.console = window.console || function(t) {};
 </script>
-<body>
-<div class="container">
+
+  
+  
+</head>
+
+<body translate=&quot;no&quot;>
+  <div class=&quot;container&quot;>
   
   <div>
-    Modo escuro
-    <label class="md3 switch">
-      <input type="checkbox" id="darkmode"  name="darkmode">
-      <span class="slider">
-        <span class="material-symbols-rounded icon">done</span>
+    Dark Mode
+    <label class=&quot;md3 switch&quot;>
+      <input type=&quot;checkbox&quot; id=&quot;darkmode&quot;  name=&quot;darkmode&quot;>
+      <span class=&quot;slider&quot;>
+        <span class=&quot;material-symbols-rounded icon&quot;>done</span>
       </span>
     </label>
   </div>
 
-  <label class="md3 switch">
-    <input type="checkbox">
-    <span class="slider">
-      <span class="material-symbols-rounded icon">done</span>
+  <label class=&quot;md3 switch&quot;>
+    <input type=&quot;checkbox&quot;>
+    <span class=&quot;slider&quot;>
+      <span class=&quot;material-symbols-rounded icon&quot;>done</span>
     </span>
   </label>
 
-  <label class="md3 switch">
-    <input type="checkbox" disabled>
-    <span class="slider">
-      <span class="material-symbols-rounded icon">done</span>
+  <label class=&quot;md3 switch&quot;>
+    <input type=&quot;checkbox&quot; disabled>
+    <span class=&quot;slider&quot;>
+      <span class=&quot;material-symbols-rounded icon&quot;>done</span>
     </span>
   </label>
 
-  <label class="md3 switch">
-    <input type="checkbox" checked disabled>
-    <span class="slider">
-      <span class="material-symbols-rounded icon">done</span>
+  <label class=&quot;md3 switch&quot;>
+    <input type=&quot;checkbox&quot; checked disabled>
+    <span class=&quot;slider&quot;>
+      <span class=&quot;material-symbols-rounded icon&quot;>done</span>
     </span>
   </label>
 
 </div>
+  
+      <script id=&quot;rendered-js&quot; >
+document.
+querySelector(&quot;#darkmode&quot;).
+onclick = function () {
+  if (this.checked)
+  document.body.classList.add(&quot;dark&quot;);else
+
+  document.body.classList.remove(&quot;dark&quot;);
+};
+//# sourceURL=pen.js
+    </script>
+
+  
 </body>
+
+</html>
